@@ -4,11 +4,11 @@ variable "vsphere_user" {
 }
 variable "vsphere_password" {
   type = string
-  default = "Vega123312##" #Password vCenter
+  default = "" #Password vCenter
 }
 variable "vsphere_server" {
   type = string
-  default = "172.18.0.92" #IP vCenter
+  default = "" #IP vCenter
 }
 variable "network" {
     type = string
@@ -23,15 +23,15 @@ variable "datacenter" {
     default = "k8s_datacenter"
 }
 variable "vm_temp" {
-    type = "string"
+    type = string
     default = "WS2012_Template"
 }
 variable "cluster_name" {
-    type = "string"
+    type = string
     default = "k8s_cluster"
 }
 variable "server_settings" {
-    type = "map"
+    type = map
     default = {
         "server1" = {
             IP = "192.168.51.208",
