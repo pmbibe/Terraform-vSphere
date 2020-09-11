@@ -111,7 +111,7 @@ resource "vsphere_virtual_machine" "vm" {
         customize {
             windows_options {
                 computer_name = each.key
-                admin_password = "Vega123312##"
+                admin_password = "PassWord"
                 time_zone = 205
                 auto_logon = true
             }
